@@ -22,3 +22,9 @@ To build your project for Aarch64:
 ```
 cargo xbuild --target=aarch64-unknown-none.json
 ```
+
+## Run with QEMU
+
+```
+qemu-system-aarch64 -M raspi3 -kernel target/aarch64-unknown-none/release/{{project-name}} -serial null -serial stdio
+```
