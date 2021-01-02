@@ -5,7 +5,6 @@
 global_asm!(include_str!("start.s"));
 
 mod panic;
-mod periferals;
 
 /// This is the main which is called from the assembly code using core 0
 /// All other cores are blocked in WPE. This is a single core solution!
